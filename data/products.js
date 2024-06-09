@@ -1,7 +1,7 @@
 export const products = [
    { 
     Id:'g4s2-e8hj-1l3m-4n',
-    image:'images/products/Laptops&monitors/Apple MacBook.webp',
+    image:'images/products/cellphones/samsung-galaxy-s9-edge-plus.jpg',
     name:' Apple MacBook',
     price: 22000,
     specs:{
