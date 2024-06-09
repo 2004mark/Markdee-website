@@ -1,7 +1,7 @@
 export const products = [
    { 
     Id:'g4s2-e8hj-1l3m-4n',
-    image:'.images/products/Laptops&monitors/Apple MacBook.webp',
+    image:'./images/products/Laptops&monitors/Apple MacBook.webp',
     name:' Apple MacBook',
     price: 22000,
     specs:{
@@ -24,7 +24,7 @@ export const products = [
 
   { 
     Id:'p9r8-d3f2-b1c4-e2',
-    image:'.images/products/Laptops&monitors/Dell Laptop.webp',
+    image:'./images/products/Laptops&monitors/Dell Laptop.webp',
     name:' Dell Latitude 7490',
     price: 11986.6,
     specs:{
@@ -65,7 +65,7 @@ export const products = [
 ,
   { 
     Id: 'k7m3-n9p8-r2t1-y4',
-    image:'images/products./Laptops&monitors/dell-desktop-computer.png',
+    image:'./images/products/Laptops&monitors/dell-desktop-computer.png',
     name:'Dell Inspiron Desktop ',
     price: 17659.9,
     specs:{
@@ -106,7 +106,7 @@ export const products = [
 ,
   { 
     Id:'2c3d-4e5f-6g7h-8i',
-    image:'images/products/Laptops&monitors/HP Notebook.webp',
+    image:'./images/products/Laptops&monitors/HP Notebook.webp',
     name:'HP Envy 13',
     price: 22000,
     specs:{
