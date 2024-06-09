@@ -1,0 +1,272 @@
+body{
+    font-family: roboto;
+    padding-top: 50px;
+}
+.header-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color:darkblue;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 50px;
+    color: white;
+
+}
+
+.header-container div a{
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+}
+.item-text{
+   color:rgb(17, 17, 17) ;
+   font-weight: 900;
+}
+.left-h-side{
+display: flex;
+align-items: center;
+}
+
+.check-out-text{
+    font-size: 25px;
+    font-weight: 900;
+   
+  
+    padding: 4px 15px;
+    border-radius: 6px;
+    cursor:pointer;
+
+}
+.icon-lock{
+    height: 30px;
+}
+
+.products-summary-grid{
+   
+   display:grid ;
+   grid-template-columns: repeat(2,1fr);
+   row-gap: 10px;
+   column-gap: 10px;
+    
+}
+
+
+.all-item-info-div{
+   border: 1px solid gray;
+   background-color: white;
+   max-width: 700px;
+   margin-bottom: 8px;
+}
+.product-container{
+
+   display: flex;
+   height: max-content;
+   align-items: center;
+   justify-content:safe;
+   max-width:100%;
+   padding: 4px;
+    
+   
+}
+.all-summary-info{
+   border: 1px solid black;
+   height: max-content;
+   padding: 4px;
+}
+.summary-side{
+   height: max-content;
+  
+  
+   max-width: 1fr;
+   margin: 0;
+   
+   
+}
+
+.summary-side div{
+   background-color: whitesmoke;
+   display: flex;
+   align-items: center;
+   padding: 2px;
+   justify-content: space-between;
+}
+
+.item-delivery-date{
+   display: flex;
+ align-items: center;
+ 
+max-width: max-content;
+color: rgb(255, 72, 0);
+font-weight: 800;
+}
+
+@media(max-width:500px){
+
+   .products-summary-grid{
+      grid-template-columns: repeat(1,100%);
+   }
+.all-item-info-div{
+   max-width: 100%;
+}
+.summary-side{
+max-width: 100%;
+
+}
+
+.item-image-container{
+   max-width: 120px;
+}
+
+.product-container{
+  flex-direction: column;
+  align-items:start;
+}
+}
+
+
+.item-image-container{
+   display: flex;
+   justify-content: center;
+   width: 180px;
+    
+  
+}
+.item{
+   
+    width: 98%;;
+}
+.item-info{
+   max-width: max-content;
+   flex: 1;
+   
+}
+.item-info div{
+   font-size:14px;
+   margin: 2px 1px;
+}
+ 
+.quantity-info{
+   display: flex;
+   flex:1;
+   margin-bottom: 2px;
+   align-items: center;
+   font-weight: 500;
+}
+
+  
+ .quantity-text{
+   color:black;
+
+ }
+ .item-name{
+   font-weight: 600;
+   color: rgb(10, 8, 136);
+ }
+.item-price{
+   font-weight: 600;
+   color: darkred;
+   padding-left: 8px;
+ }
+ .item-quantity{
+   font-weight: 600;
+   color: rgb(9, 2, 109);
+   padding-left: 2px;
+ }
+
+ .delivery-info{
+   
+   margin-left: 20px;
+   width: 250px;
+   padding-top: 15px;
+ }
+
+.choose-delivery-date-text{
+   font-weight: 700;
+   font-size: 16px;
+   color: rgb(8, 8, 211);
+   padding-bottom: 6px;
+}
+.shipping-date-flex input{
+   cursor: pointer;
+}
+.shipping-date-flex{
+   display: flex;
+   align-items: center;
+   margin: 5px;
+}
+.shipping-cost{
+   color: rgb(63, 28, 28);
+   display: flex;
+   padding-left: 3px;
+}
+.date{
+   font-weight: 500;
+}
+.shipping-cost{
+   color: brown;
+   font-size: 13.6px;
+}
+
+.quantity-update-buttons{
+  display: flex;
+  margin: 4px;
+}
+
+.update-button{
+   background-color: green;
+   color: white;
+   border: 1px solid rgb(59, 57, 57);
+   padding: 2px 4px;
+   cursor: pointer;
+   margin-right: 5px;
+}
+.delete-button{
+background-color: darkred;
+color :white;
+border:  1px solid rgb(59, 57, 57);
+padding: 2px 4px;
+border-radius: 2px;
+cursor: pointer;
+
+
+}
+
+.order-summary-heading{
+ font-size: 20px;
+ font-weight: 700;
+
+}
+
+.amount-before-tax{
+   font-weight: bold;
+}
+
+.actual-total-amount,
+.amount-before-tax{
+   border-top: 1px solid black ;
+}
+.order-total-text,
+.actual-total-amount{
+   color:darkred;
+   font-weight: bold;
+}
+.place-order-div{
+display: flex;
+justify-content: center;
+background-color: whitesmoke;
+}
+.place-order-button{
+   cursor: pointer;
+   width: 100px;
+   padding: 6px 6px;
+   color: white;
+   background-color:rgb(3, 88, 3);
+   border: none;
+   border-radius: 3px;
+   flex-shrink: none;
+}
