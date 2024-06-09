@@ -65,7 +65,7 @@ export const products = [
 ,
   { 
     Id: 'k7m3-n9p8-r2t1-y4',
-    image:'images/products/Laptops&monitors/dell-desktop-computer.png',
+    image:'images/products/Laptops&Monitors/dell-desktop-computer.png',
     name:'Dell Inspiron Desktop ',
     price: 17659.9,
     specs:{
@@ -419,7 +419,7 @@ export const products = [
    },
    { 
      Id:'6a3d-4z5f-6t7h-8n',
-     image:'images/products/cellphones/Samsung-A15-LTE.jpg',
+     image:'images/products/cellphones/Samsung-A15-Lte.jpg',
      name:'Samsung Galaxy A15 LTE',
      price: 4450,
      specs:{
@@ -483,7 +483,7 @@ export const products = [
    },
    { 
      Id:'2a3d-4a5f-6a7h-8k',
-     image:'images/products/cellphones/samsung-galaxy-M34.jpg',
+     image:'images/products/cellphones/Samsung-galaxy-M34.jpg',
      name:'Samsung Galaxy M34',
      price: 5000.,
      specs:{
@@ -579,7 +579,7 @@ export const products = [
    },
    { 
      Id:'2c3d-4e5l-6x7c-8y',
-     image:'images/products/cellphones/samsung-galaxy-s10-edge.jpg',
+     image:'images/products/cellphones/Samsung-galaxy-s10-edge.jpg',
      name:'Samsung Galaxy S10',
      price: 8499.9,
      specs:{
