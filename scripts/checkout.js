@@ -146,7 +146,12 @@ js-all-items-info-${matchingProduct.Id}">
 
 document.querySelector('.js-products-side').innerHTML=cartItemsHTML
 
-
+document.querySelectorAll('.quantity-update-input')
+    .forEach((input)=>{
+        input.addEventListener('input'=>{
+            input.value=input.value.replace(/,/g,".")
+        })
+    })
 deletingItem()
 updatingItemQuantity()
 
@@ -201,14 +206,7 @@ document.querySelectorAll('.js-save-quantity')
             updateQuantity(productId,updatedQuantity)
 
             itemContainer.classList.remove('is-editing-quantity')
-        }
-        else if(updatedQuantity.includes('.') || updatedQuantity.includes(',') ){
-        document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='Please provide a whole number!'
-            setTimeout(()=>{
-
-                document.querySelector(`.quantity-update-caution-${productId}`).innerHTML =' 0 < quantity <=100'
-            },3000)
-            
+        
         }else{
             document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='Please provide correct quantity!'
             setTimeout(()=>{
