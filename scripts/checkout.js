@@ -62,7 +62,7 @@ js-all-items-info-${matchingProduct.Id}">
   <button class="update-button js-update-button"
   data-product-id="${matchingProduct.Id}">
     Update</button>
-    <input type="number" step ="1" class="quantity-update-input js-quantity-update-input-${matchingProduct.Id}">
+    <input type="number" class="quantity-update-input js-quantity-update-input-${matchingProduct.Id}">
     <button class="save-input-quantity-button js-save-quantity"data-product-id="${matchingProduct.Id}"
     >
     Save</button>
@@ -202,9 +202,15 @@ document.querySelectorAll('.js-save-quantity')
 
             itemContainer.classList.remove('is-editing-quantity')
             
-        }else{
+        }else if(updatedQuantity.includes('.') ||updatedQuantity.includes(','){
+        document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='Please provide a whole number!'
+            setTimeout(()=>{
 
-             document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='please provide correct quantity'
+                document.querySelector(`.quantity-update-caution-${productId}`).innerHTML =' 0 < quantity <=100'
+            },3000)
+            
+        }else{
+            document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='Please provide correct quantity!'
             setTimeout(()=>{
 
                 document.querySelector(`.quantity-update-caution-${productId}`).innerHTML =' 0 < quantity <=100'
