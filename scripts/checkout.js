@@ -62,7 +62,7 @@ js-all-items-info-${matchingProduct.Id}">
   <button class="update-button js-update-button"
   data-product-id="${matchingProduct.Id}">
     Update</button>
-    <input type="number" class="quantity-update-input js-quantity-update-input-${matchingProduct.Id}">
+    <input type="number" step ="1" class="quantity-update-input js-quantity-update-input-${matchingProduct.Id}">
     <button class="save-input-quantity-button js-save-quantity"data-product-id="${matchingProduct.Id}"
     >
     Save</button>
