@@ -201,8 +201,8 @@ document.querySelectorAll('.js-save-quantity')
             updateQuantity(productId,updatedQuantity)
 
             itemContainer.classList.remove('is-editing-quantity')
-            
-        }else if(updatedQuantity.includes('.') ||updatedQuantity.includes(',')){
+        }
+        else if(updatedQuantity.includes('.') || updatedQuantity.includes(',') ){
         document.querySelector(`.quantity-update-caution-${productId}`).innerHTML ='Please provide a whole number!'
             setTimeout(()=>{
 
