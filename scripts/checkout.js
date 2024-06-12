@@ -149,7 +149,7 @@ document.querySelector('.js-products-side').innerHTML=cartItemsHTML
 document.querySelectorAll('.quantity-update-input')
     .forEach((input)=>{
         input.addEventListener('input'=>{
-            input.value=input.value.replace(/,/g,".")
+            input.value=input.value.replace(/[,.]/g,"")
         })
     })
 deletingItem()
